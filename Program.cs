@@ -10,10 +10,13 @@ namespace MethodsMarcusCrowley
             // Use try-catch method to handle *DivideByZeroException* error
             try // Enter code first
             {
-                // Randomize all numbers
                 Random randomNumbers = new Random(); // Declare variable for randomizing numbers
-                int number1 = randomNumbers.Next(); // Declare variable for random first number
-                int number2 = randomNumbers.Next(); // Declare variable for random second number
+
+                // Declare variables for two numbers and determine each of their ranges in number selection
+                // If parenthesis is closed with no range (), all numbers are randomized; If there's a range (min, max),
+                // random number will be selected within that range
+                int number1 = randomNumbers.Next();
+                int number2 = randomNumbers.Next(); 
 
                 // Declare variables and formulas for the four arithmetic operations
                 int add = number1 + number2; // Declare variable for sum
@@ -49,7 +52,7 @@ namespace MethodsMarcusCrowley
                     Console.WriteLine("Parameter does not match any of the four operations"); // Message displays if parameter value is outside 0-3
                 }
             }
-            catch(DivideByZeroException ex) // Prevents app from freezing and/or crashing
+            catch(DivideByZeroException ex) // Prevents app from terminating when dividing by zero
             {
                 Console.WriteLine(ex); // Error message displays if attempting to divide by zero
             }
