@@ -54,7 +54,7 @@ namespace MethodsMarcusCrowley
             }
             catch(DivideByZeroException ex) // Prevents app from terminating when dividing by zero
             {
-                Console.WriteLine(ex);
+                Console.WriteLine(ex); // Message displays if attempting to divide by zero
             }
         }
         // Use the *Main* block below to call the *MyMessage* method above
