@@ -58,7 +58,7 @@ namespace MethodsMarcusCrowley
         static void Main(string[] args)
         {
             Console.WriteLine("Marcus David Crowley"); // Full name will display on the first line of console
-            MyMessage(0); // Call method by one of its parameter value
+            MyMessage(0); // Call method by one of its parameter values
         }
     }
 }
